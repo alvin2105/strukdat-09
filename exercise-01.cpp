@@ -58,7 +58,7 @@ int length(const char *x){
 }
 
 int main(){
-	char kalimat[maxElemen];
+	char kata[maxElemen];
 
 	cout<<"------------------------"<<endl;
     cout<<"STACK LIST PEMBALIK KATA"<<endl;
@@ -66,17 +66,17 @@ int main(){
 
 	createStack(s);
 	cout<<"Masukkan kata\t: ";
-    cin>>kalimat;
+    cin>>kata;
     cout<<endl;
     cout<<"Sebelum dibalik\t: ";
-    cout<<kalimat;
+    cout<<kata;
 	cout<<endl;
     cout<<"Setelah dibalik\t: ";
 
-	for(int i=0;i<length(kalimat);i++){
-		push(s,kalimat[i]);
+	for(int i=0;i<length(kata);i++){
+		push(s,kata[i]);
 	}
-	for(int i=0;i<length(kalimat);i++){
+	for(int i=0;i<length(kata);i++){
 		cout<<pop(s);
 	}
 

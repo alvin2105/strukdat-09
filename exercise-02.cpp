@@ -58,24 +58,24 @@ void pop(list&top, pointer&pHapus){
 main(){
 	list top;
 	pointer s,pHapus;
-	char kalimat[maxElmt];
+	char kata[maxElmt];
 
 	cout<<"------------------------"<<endl;
 	cout<<"STACK LIST PEMBALIK KATA"<<endl;
 	cout<<"------------------------"<<endl;
 
 	cout<<"Masukkan kata\t: ";
-	cin>>kalimat;
+	cin>>kata;
 
 	createStack(top);
 
 	cout<<endl<<"Sebelum dibalik\t: ";
-	for (int i=0; i<strlen(kalimat); i++){
-		createElmt(s,kalimat[i]);
+	for (int i=0; i<strlen(kata); i++){
+		createElmt(s,kata[i]);
 		push(top,s);
 	}
 	cout<<endl<<"Sesudah dibalik\t: ";
-	for (int i=0; i<strlen(kalimat); i++){
+	for (int i=0; i<strlen(kata); i++){
 		pop(top,pHapus);
 	}
 }
